@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: lightgray;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        nav {
+            float: lfet;
+            width: 20%;
+            height: 300px;
+            background-color: #339999;
+            padding: 20px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        section::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        footer {
+            background-color: #ffcc00;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>semantic 요소를 이용한 레이아웃</h1>
+    <header>
+        <h2>HEADER</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">menu 001</a></li>
+                <li><a href="#">menu 002</a></li>
+                <li><a href="#">menu 003</a></li>
+                <li><a href="#">menu 004</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>SBS 아카데미</h1>
+            <p>
+                남미대륙의 코아티도 외모나 너구리의 상징으로 잘못 알려진 줄무늬꼬리 때문에 너구리로 오해하기도 하나 북미의 라쿤과 가까운 종으로 역시 동아시아의 너구리와 거리가 먼 동물이다. 그리고
+                오리너구리나 바위너구리[5]와도 전혀 관계가 없다. 레서판다도 비슷한 외모로 너구리로 오인받기도 한다.[6]
+            </p>
+            <p>
+                파란색은 원 서식지, 붉은색은 도입 서식지다. 원래 너구리는 한반도와 일본, 중국, 그리고 동아시아에 인접한 러시아 일부 지역에서 서식하였다. 1928년에 구 소련이 모피를 얻을 목적으로
+                가져온[7] 너구리들이 야생화된 이후 소련 영토를 넘어 폴란드와 독일로 퍼지게 된 것이다. 현재 유럽에서 라쿤에 필적할 정도로 생태계와 농업에 끼치는 피해가 무지막지하다. 그래서 독일을
+                포함한 유럽 국가에서는 라쿤과 함께 10만 마리 이상이나 사냥당하기도 한다. 덴마크에서는 아예 너구리 번식 제로로 목표를 삼을 정도.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+</body>
+
+</html>
