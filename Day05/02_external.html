@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선택자 적용방식 - external</title>
-    <style>
-        h1 { color: red;}
-        h2 { font-style: italic; }
-        h3 { font-weight: lighter;}
-        
-    </style>
+
+    <!-- 외부 스타일 시트 포함하기 -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div>
-        <h1>embeded 방식 (내부 스타일 시트)</h1>
-        <h2>&lt;head&gt; 태그에 &lt;style&gt; 내부에 선택자와 css 속성을 적용하여 스타일을 지정하는 방식</h2>
-        <h3>HTML 파일 안에서, css와 HTML 코드를 분리할 수 있다</h3>
+        <h1>외부 CSS파일 불러오는 방식</h1>
+        <h2>외부에 작성한 CSS 파일을 &latail;link&gt; 태그를 이용하여 해당 파일을 불러와 스타일을 지정하는 방식</h2>
+        <h3>
+            - HTML 코드와 CSS 코드를 파일 단위로 분리 할 수 있다
+            - HTML 작업과 CSS 작업을 동시에 할 수 있다
+            - 코드가 간결해지고, 유지보수에도 편리하다
+        </h3>
     </div>
 </body>
 </html>
