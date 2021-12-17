@@ -28,3 +28,12 @@
 .farthest-side {
     background-image: radial-gradient(farthest-side at 60% 55%, blue, green, yellow, black);
 }
+
+
+/* 누적 */
+.stacked-radial {
+    background: 
+        radial-gradient(circle at 50% 0, rgba(255,0,0, 0.5) rgba(255,0,0,0) 70.71%),
+        radial-gradient(circle at 6.7% 75%, rgba(0,0,255, 0.5) rgba(0,0,255,0) 70.71%),
+        radial-gradient(circle at 93.3% 75%, rgba(0,255,0, 0.5) rgba(0,255,0,0) 70.71%);
+}
