@@ -31,12 +31,9 @@
     z-index: -1;
 }
 
-.first { left: 0;}
-
-.second { right: 0;}
-
+.first { top: 0; left: 0;}
+.second { top: 0;right: 0;}
 .third { bottom: 0; left: 0;}
-
 .fourth { bottom: 0; right: 0;}
 
 /* 변형 속성 */
@@ -48,9 +45,6 @@
 }
 
 .fifth { top: 0; left: 500px;}
-
 .sixth { top: 200px; left: 500px;}
- 
 .seventh { top: 400px; left: 500px;}
-
 .eighth { top: 600px; left: 500px;}
