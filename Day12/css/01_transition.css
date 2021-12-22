@@ -82,4 +82,23 @@
     transition-duration: 3s;
 }
 
+.transition9 {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    transition-duration: 2s;
+    transition-delay: 2s;
+}
 
+.transition9:hover { width: 1000px;}
+
+.transition10 {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    transition-duration: 3s;
+    /* 3차 베지어 곡선 */
+    transition-timing-function: cubic-bezier(.68,.27,.41,.87);
+}
+
+.transition10:hover { width: 1400px;}
