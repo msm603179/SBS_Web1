@@ -3,12 +3,15 @@
     position: relative;
     margin: 0 auto;
     width: 1400px;
-    height: 500px;
+    height: 600px;
     border: 3px dashed orange;
     box-sizing: border-box;
 }
 
-.inner { text-align: center;}
+.inner { 
+    text-align: center;
+    margin-top: 80px;
+}
 
 .box {
     display: inline-block;
@@ -39,8 +42,7 @@
     z-index: -1;
 }
 
-/* 반대 쪽 방향은 -를 주면 된다 ex) -45deg */
-.rotate1:hover { transform: rotate(45deg);}
-.rotate2:hover { transform: rotateX(45deg);}
-.rotate3:hover { transform: rotateY(45deg);}
-.rotate4:hover { transform: rotateZ(45deg);}
+/* 축소를 하려면 소숫점으로 떨어진다 0.0 ~ N 비율로 크기를 적용 ex) 0.2 */
+.scale1:hover { transform: scale(2);}
+.scale2:hover { transform: scaleX(2);}
+.scale3:hover { transform: scaleY(2);}
