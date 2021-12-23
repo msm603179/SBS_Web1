@@ -1,0 +1,49 @@
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(135,244,253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    /* 계속 반복 */
+    animation-iteration-count: infinite;
+}
+
+#wrap > h1 { line-height: 200px;}
+
+/* from, 0% : 시작 , to, 100% : 끝 */
+@keyframes ball {
+    from {
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        left: 250;
+        transform: rotate(180deg);
+    }
+
+    50% {
+        left: 500px;
+        transform: rotate(360deg);
+    }
+
+    75% {
+        left: 250px;
+        transform: rotate(180deg);
+    }
+
+    to {
+        left: 0px;
+        transform: rotate(0deg);
+    }
+}
