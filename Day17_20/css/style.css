@@ -207,6 +207,7 @@ section.service .service-list li .card .card-info {
 }
 section.service .service-list li .card .card-info h2 { font-size: 1.4rem; margin-bottom: 5px; }
 section.service .service-list li .card .card-info p { font-size: 1.2rem; margin-bottom: 5px; }
+section.service .service-list li .card .card-info .star-box {}
 section.service .service-list li .card .card-info .star-box img { width: 16px; margin-right: -3px; }
 section.service .service-list li .card .card-info .star-box span { font-size: 0.8rem; line-height: 16px; }
 section.service .service-list li .card .card-info .btn { 
@@ -293,6 +294,7 @@ footer .inner .list li:last-child a { font-weight: bold; }
     }
 
     .sidebar {width: 100%; background-color: rgba(64,64,64,0.9);}
+    .sidebar .inner {}
     .sidebar .inner a { font-size: 24px; }
     .sidebar .close { font-size: 30px; }
 
